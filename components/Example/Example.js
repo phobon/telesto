@@ -1,9 +1,10 @@
 import React from 'react';
 import { Box, Text } from '@phobon/base';
 
-const Example = ({ text, ...props }) => (
+const Example = ({ text, children, ...props }) => (
   <Box {...props}>
     <Text>{text}</Text>
+    {children}
   </Box>
 );
 

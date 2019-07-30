@@ -4,20 +4,28 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "storybook": "start-storybook -p 9000"
   },
   "dependencies": {
-    "@mdx-js/loader": "^1.1.0",
-    "@next/mdx": "^9.0.2",
-    "@phobon/base": "^2.2.11",
-    "framer-motion": "^1.2.2",
+    "@mdx-js/loader": "latest",
+    "@next/mdx": "latest",
+    "@phobon/base": "latest",
+    "framer-motion": "latest",
     "next": "latest",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "styled-components": "^5.0.0-beta.8",
-    "styled-system": "^5.0.12"
+    "react": "latest",
+    "react-dom": "latest",
+    "styled-components": "beta",
+    "styled-system": "latest"
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.10.6"
+    "@babel/core": "^7.5.5",
+    "@storybook/addon-a11y": "next",
+    "@storybook/addon-actions": "next",
+    "@storybook/addon-knobs": "next",
+    "@storybook/addons": "next",
+    "@storybook/react": "next",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-styled-components": "latest"
   }
 }

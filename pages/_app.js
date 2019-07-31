@@ -18,13 +18,11 @@ export default class TelestoApp extends App {
         <style jsx global>{`
           :root, body {
             width: 100vw;
-            min-height: 100vh;
         
             margin: 0;
             padding: 0;
         
             font-size: 8px;
-            overflow-x: hidden;
           }
         
           body {
@@ -33,11 +31,6 @@ export default class TelestoApp extends App {
             font-style: normal;
             font-weight: 400;
             line-height: 1.43;
-        
-            // Specific layout resets.
-            display: flex;
-            flex: none;
-            flex-direction: column;
           }
         
           *, ::before, ::after {
@@ -108,15 +101,6 @@ export default class TelestoApp extends App {
 
           #__next {
             width: 100vw;
-            height: 100vh;
-          }
-        
-          body {
-            font-family: 'Karla', sans-serif;
-          }
-        
-          h1, h2, h3, h4, h5, h6 {
-            font-family: 'Rubik', sans-serif;
           }
         `}</style>
         <ThemeProvider theme={theme}>

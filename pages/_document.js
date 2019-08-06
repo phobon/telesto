@@ -1,7 +1,9 @@
-import Document from 'next/document'
-import { ServerStyleSheet } from 'styled-components'
+import Document from 'next/document';
+import { ServerStyleSheet } from 'styled-components';
 
-export default class MyDocument extends Document {
+import GlobalStyles from './GlobalStyles';
+
+export default class TelestoDocument extends Document {
   static async getInitialProps (ctx) {
     const sheet = new ServerStyleSheet()
     const originalRenderPage = ctx.renderPage
@@ -9,7 +11,12 @@ export default class MyDocument extends Document {
     try {
       ctx.renderPage = () =>
         originalRenderPage({
-          enhanceApp: App => props => sheet.collectStyles(<App {...props} />)
+          enhanceApp: App => props => sheet.collectStyles(
+            <React.Fragment>
+              <GlobalStyles />
+              <App {...props} />
+            </React.Fragment>
+          )
         })
 
       const initialProps = await Document.getInitialProps(ctx)

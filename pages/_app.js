@@ -6,6 +6,8 @@ import { theme } from '@phobon/base';
 
 import { MDXProvider } from '@mdx-js/react';
 
+import Meta from '@/components/Meta';
+
 const components = {
   // Map components as required here. Move this to local state to update
   // at runtime, which may not really be needed
@@ -16,6 +18,7 @@ export default class TelestoApp extends App {
     const { Component, pageProps } = this.props
     return (
       <Container>
+        <Meta />
         <Head>
           <title>telesto</title>
           <meta name="viewport" content="width=device-width, initial-scale=1" />

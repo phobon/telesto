@@ -1,6 +1,6 @@
 # Telesto
 
-A very simple NextJS template with MDX support
+An MDX-powered app template
 
 ## Stack
 

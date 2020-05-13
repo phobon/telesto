@@ -1,4 +1,9 @@
-const testData = [
+interface Test {
+  id: number;
+  data: string;
+}
+
+const testData: Test[] = [
   {
     id: 1,
     data: '123',
@@ -21,6 +26,6 @@ const testData = [
   },
 ];
 
-export default function handle(req, res) {
+export default function handle(req: any, res: { json: (data: object) => void}): void {
   res.json(testData);
 };

@@ -13,16 +13,16 @@
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "styled-components": "beta",
+    "styled-components": "latest",
     "styled-system": "latest"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
-    "@storybook/addon-a11y": "next",
-    "@storybook/addon-actions": "next",
-    "@storybook/addon-knobs": "next",
-    "@storybook/addons": "next",
-    "@storybook/react": "next",
+    "@storybook/addon-a11y": "latest",
+    "@storybook/addon-actions": "latest",
+    "@storybook/addon-knobs": "latest",
+    "@storybook/addons": "latest",
+    "@storybook/react": "latest",
     "babel-loader": "^8.0.6",
     "babel-plugin-styled-components": "latest"
   }

@@ -17,13 +17,14 @@
     "styled-system": "latest"
   },
   "devDependencies": {
-    "@babel/core": "^7.5.5",
+    "@babel/core": "latest",
     "@storybook/addon-a11y": "latest",
     "@storybook/addon-actions": "latest",
     "@storybook/addon-knobs": "latest",
     "@storybook/addons": "latest",
     "@storybook/react": "latest",
-    "babel-loader": "^8.0.6",
+    "@types/node": "latest",
+    "babel-loader": "latest",
     "babel-plugin-styled-components": "latest"
   }
 }

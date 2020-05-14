@@ -9,12 +9,15 @@
     "@mdx-js/loader": "latest",
     "@next/mdx": "latest",
     "@phobon/base": "latest",
-    "framer-motion": "latest",
+    "@phobon/hooks": "latest",
+    "framer-motion": "beta",
     "next": "latest",
+    "next-compose-plugins": "latest",
     "react": "latest",
     "react-dom": "latest",
     "styled-components": "latest",
-    "styled-system": "latest"
+    "styled-system": "latest",
+    "swr": "latest"
   },
   "devDependencies": {
     "@babel/core": "latest",
@@ -24,7 +27,12 @@
     "@storybook/addons": "latest",
     "@storybook/react": "latest",
     "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@types/styled-components": "latest",
+    "@types/styled-system": "latest",
     "babel-loader": "latest",
-    "babel-plugin-styled-components": "latest"
+    "babel-plugin-styled-components": "latest",
+    "typescript": "latest"
   }
 }

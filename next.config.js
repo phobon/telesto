@@ -1,7 +1,12 @@
+const withPlugins = require('next-compose-plugins');
 const withMDX = require('@next/mdx')({
-  extension: /\.mdx?$/
+  extension: /\.mdx?$/,
 });
 
-module.exports = withMDX({
-  pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx']
-});
+module.exports = withPlugins([
+    withMDX({
+      pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx']
+    }),
+  ],
+);
+

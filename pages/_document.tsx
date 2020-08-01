@@ -4,10 +4,10 @@ import { ServerStyleSheet } from 'styled-components';
 
 import GlobalStyles from './GlobalStyles';
 
-export default class TelestoDocument extends Document {
+export default class HighSeasonGuideDocument extends Document {
 }
 
-TelestoDocument.getInitialProps = async (ctx) => {
+HighSeasonGuideDocument.getInitialProps = async (ctx) => {
   // Resolution order
   //
   // On the server:

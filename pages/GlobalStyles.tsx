@@ -1,6 +1,10 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
+  html {
+    scroll-behavior: smooth;
+  }
+
   :root, body {
     width: 100%;
 
@@ -86,6 +90,10 @@ const GlobalStyles = createGlobalStyle`
 
   #__next {
     width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
   }
 `;
 

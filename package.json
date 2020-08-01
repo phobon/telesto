@@ -10,7 +10,7 @@
     "@next/mdx": "latest",
     "@phobon/base": "latest",
     "@phobon/hooks": "latest",
-    "framer-motion": "beta",
+    "framer-motion": "latest",
     "next": "latest",
     "next-compose-plugins": "latest",
     "react": "latest",

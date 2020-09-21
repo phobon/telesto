@@ -5,8 +5,8 @@ export default (req, res) => {
 
   // TODO: Query the database here
   return res.status(200).json({
-    email: 'test@example.com',
+    email: "test@example.com",
     id,
-    name: 'Test',
+    name: "Test",
   });
 };

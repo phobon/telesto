@@ -2,31 +2,15 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/components/*": [
-        "components/*/index"
-      ],
-      "@/components": [
-        "components/index"
-      ],
-      "@/hooks/*": [
-        "hooks/*"
-      ],
-      "@/hooks": [
-        "hooks/index"
-      ],
-      "@/api/*": [
-        "pages/api/*"
-      ],
-      "@/api": [
-        "pages/api/index"
-      ]
+      "@/components/*": ["components/*/index"],
+      "@/components": ["components/index"],
+      "@/hooks/*": ["hooks/*"],
+      "@/hooks": ["hooks/index"],
+      "@/api/*": ["pages/api/*"],
+      "@/api": ["pages/api/index"]
     },
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -39,12 +23,6 @@
     "isolatedModules": true,
     "jsx": "preserve"
   },
-  "exclude": [
-    "node_modules"
-  ],
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
-  ]
+  "exclude": ["node_modules"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
 }

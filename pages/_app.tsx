@@ -1,9 +1,9 @@
-import React from 'react';
-import { AppProps } from 'next/app';
-import { ThemeProvider } from 'styled-components';
-import { theme } from '@phobon/base';
-import { MDXProvider } from '@mdx-js/react';
-import { AnimatePresence } from 'framer-motion';
+import React from "react";
+import { AppProps } from "next/app";
+import { ThemeProvider } from "styled-components";
+import { theme } from "@phobon/tokens";
+import { MDXProvider } from "@mdx-js/react";
+import { AnimatePresence } from "framer-motion";
 
 const components = {
   // Map components as required here. Move this to local state to update
@@ -20,6 +20,6 @@ function App({ Component, pageProps }: AppProps) {
       </MDXProvider>
     </ThemeProvider>
   );
-};
+}
 
 export default App;

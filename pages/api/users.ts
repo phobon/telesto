@@ -5,16 +5,16 @@ export default (req, res) => {
    * req.query
    * req.body
    */
-  
+
   /*
-    * Express-like helper functions for the response 'res'.
-    * res.status(200);
-    * res.json({});
-    * res.send('HTTP response');
-    */
-    return res.status(200).json({
-      email: 'test@example.com',
-      id: 1,
-      name: 'Test',
-    });
-  };
+   * Express-like helper functions for the response 'res'.
+   * res.status(200);
+   * res.json({});
+   * res.send('HTTP response');
+   */
+  return res.status(200).json({
+    email: "test@example.com",
+    id: 1,
+    name: "Test",
+  });
+};

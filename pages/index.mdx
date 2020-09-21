@@ -1,7 +1,7 @@
-import { Box } from '@phobon/base';
+import { Box } from "@phobon/base";
 
-import Example from '@/components/Example';
-import Meta from '@/components/Meta';
+import Example from "@/components/Example";
+import Meta from "@/components/Meta";
 
 <Meta />
 
@@ -11,19 +11,17 @@ This is the index page
 
 <Box width={50} height={50} bg="purples.7" />
 
-<Example text="test">
-  asdf
-</Example>
+<Example text="test">asdf</Example>
 
 ```jsx
 // Fetching from an api example
 const [data, setData] = useState([]);
 useEffect(() => {
   async function getData() {
-    const res = await fetch('/api/example');
+    const res = await fetch("/api/example");
     const newData = await res.json();
     setData(newData);
-  };
+  }
 
   getData();
 }, []);

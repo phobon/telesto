@@ -1,6 +1,6 @@
 import React from "react";
 import { AppProps } from "next/app";
-import { ThemeProvider } from "styled-components";
+import { ThemeProvider } from "@emotion/react;
 import { theme } from "@phobon/tokens";
 import { MDXProvider } from "@mdx-js/react";
 import { AnimatePresence } from "framer-motion";

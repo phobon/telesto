@@ -1,8 +1,7 @@
 import React from "react";
 import Document from "next/document";
-import { ServerStyleSheet } from "styled-components";
 
-import GlobalStyles from "./GlobalStyles";
+import { GlobalStyles } from "./GlobalStyles";
 
 export default class TelestoDocument extends Document {}
 
@@ -29,19 +28,16 @@ TelestoDocument.getInitialProps = async (ctx) => {
   // 3. app.render
   // 4. page.render
 
-  const sheet = new ServerStyleSheet();
   const originalRenderPage = ctx.renderPage;
 
   try {
     ctx.renderPage = () =>
       originalRenderPage({
         enhanceApp: (App) => (props) =>
-          sheet.collectStyles(
-            <>
-              <GlobalStyles />
-              <App {...props} />
-            </>
-          ),
+          <>
+            <GlobalStyles />
+            <App {...props} />
+          </>
       });
 
     const initialProps = await Document.getInitialProps(ctx);
@@ -50,10 +46,8 @@ TelestoDocument.getInitialProps = async (ctx) => {
       ...initialProps,
       styles: [
         ...React.Children.toArray(initialProps.styles),
-        sheet.getStyleElement(),
       ],
     };
   } finally {
-    sheet.seal();
   }
 };

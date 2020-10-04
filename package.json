@@ -8,6 +8,8 @@
   "dependencies": {
     "@mdx-js/loader": "latest",
     "@next/mdx": "latest",
+    "@emotion/react": "latest",
+    "@emotion/styled": "next",
     "@phobon/base": "latest",
     "@phobon/hooks": "latest",
     "@phobon/tokens": "latest",
@@ -16,7 +18,6 @@
     "next-compose-plugins": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "styled-components": "latest",
     "styled-system": "latest",
     "swr": "latest"
   },
@@ -30,10 +31,8 @@
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
-    "@types/styled-components": "latest",
     "@types/styled-system": "latest",
     "babel-loader": "latest",
-    "babel-plugin-styled-components": "latest",
     "typescript": "latest"
   }
 }

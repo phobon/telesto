@@ -1,7 +1,7 @@
 import React from "react";
 import Document from "next/document";
 
-import { GlobalStyles } from "./GlobalStyles";
+import { GlobalStyles } from "@/components/GlobalStyles";
 
 export default class TelestoDocument extends Document {}
 

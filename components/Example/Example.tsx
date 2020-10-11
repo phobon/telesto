@@ -5,7 +5,7 @@ interface ExampleProps {
   text?: string;
 }
 
-const Example: FunctionComponent<ExampleProps> = ({
+export const Example: FunctionComponent<ExampleProps> = ({
   text,
   children,
   ...props
@@ -15,5 +15,3 @@ const Example: FunctionComponent<ExampleProps> = ({
     {children}
   </Stack>
 );
-
-export default Example;

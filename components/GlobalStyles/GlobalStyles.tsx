@@ -45,7 +45,7 @@ export const GlobalStyles = () => {
     "img, fieldset": {
       border: 0,
     },
-    __next: {
+    "#__next": {
       width: "100%",
     },
   };
